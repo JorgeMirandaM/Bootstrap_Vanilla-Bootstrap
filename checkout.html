@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Pago</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col py-5 text-center">
+                <h2>Formulario de pago</h2>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore neque provident,
+                    saepe aspernatur aperiam!</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-md-8 order-2 order-md-1 mb-3">
+                <h4 class="mb-3">Direccion de Envio</h4>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="correo" class="form-label">Correo</label>
+                            <input type="email" class="form-control" id="correo" name="correo">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col mb-3">
+                            <label for="usuario" class="form-label">Usuario</label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" id="usuario" class="form-control" placeholder="Usuario">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="correo" class="form-label">Correo <span
+                                    class="text-muted">(Opcional)</span></label>
+                            <input type="email" class="form-control" placeholder="nombre@correo.com" name="correo">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="direccion" class="form-label">Direccion</label>
+                            <input type="text" class="form-control" placeholder="1234 Calle Principal" name="direccion">
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="direccion2" class="form-label">Direccion 2</label>
+                            <input type="text" class="form-control" placeholder="Interior o informacion adicional"
+                                name="direccion2">
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais" class="form-label">Pais</label>
+                            <select name="pais" id="pais" class="form-select">
+                                <option value="">Seleccionar Pais</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="españa">España</option>
+                                <option value="colombia">Comlombia</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="pais" class="form-label">Estado</label>
+                            <select name="pais" id="pais" class="form-select">
+                                <option value="">Seleccionar Estado</option>
+                                <option value="mexico">Mexico</option>
+                                <option value="españa">España</option>
+                                <option value="colombia">Comlombia</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-sm-4 mb-3">
+                            <label for="codigo-postal" class="form-label">Codigo Postal</label>
+                            <input type="text" id="codigo-postal" class="form-control">
+
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="misma-direccion">
+                                <label for="misma-direccion" class="form-label">Enviar a la misma direccion de
+                                    facturacion</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="gurdar-informacion">
+                                <label for="gurdar-informacion" class="form-label">Guardar infromacion para la siguiente
+                                    compra</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-credito">
+                                <label for="tarjeta-credito" class="form-check-label">Tarjeta de Credito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="tarjeta-debito">
+                                <label for="tarjeta-debito" class="form-check-label">Tarjeta de Debito</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="metodo-pago" class="form-check-input" id="paypal">
+                                <label for="paypal" class="form-check-label">Paypal</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="nombre-tarjeta" class="form-label">Nombre en la tarjeta</label>
+                            <input type="text" id="nombre-tarjeta" class="form-control">
+                            <small class="text-muted">Nombre completo como se muestra en la tarjeta</small>
+                        </div>
+                        <div class="col-12 col-sm-6 mb-3">
+                            <label for="numero-tarjeta" class="form-label">Numero tarjeta</label>
+                            <input type="text" id="numero-tarjeta" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label for="tarjeta-expiracion" class="form-label">Expiración</label>
+                            <input type="text" id="tarjeta-expiracion" class="form-control">
+                        </div>
+                        <div class="col-6 col-sm-4 mb-3">
+                            <label for="tarjeta-cvv" class="form-label">CVV</label>
+                            <input type="text" id="tarjeta-cvv" class="form-control">
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+
+                    <input type="submit" value="Continuar al pago" class="btn btn-block btn-lg btn-primary">
+                </form>
+            </div>
+
+            <div class="col-12 col-md-4 order-1 order-md-2 mb-3">
+                <h4 class="mb-3 d-flex justify-content-between align-items-center">
+                    <span class="text-muted">Tu carrito</span>
+                    <span class="badge bg-secondary rounded-pill">3</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Nombre del Producto</h6>
+                            <small class="text-muted">Pequeña descripcion</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Nombre del Producto</h6>
+                            <small class="text-muted">Pequeña descripcion</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <div>
+                            <h6 class="my-0">Nombre del Producto</h6>
+                            <small class="text-muted">Pequeña descripcion</small>
+                        </div>
+                        <span class="text-muted">$12</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between bg-light">
+                        <div class="text-success">
+                            <h6 class="my-0">Nombre del Producto</h6>
+                            <small class="text-success">Pequeña descripcion</small>
+                        </div>
+                        <span class="text-success">$-5</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between">
+                        <span>Total (USD)</span>
+                        <strong>$20</strong>
+                    </li>
+                </ul>
+
+                <form action="" class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Cupon">
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary">Canjear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer class="row my-5 py-5 text-muted text-center text-small">
+            <div class="col">
+                <p class="mb-1">© 2017–2023 Company Name</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            Privacidad
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            Privacidad
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">
+                            Privacidad
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
